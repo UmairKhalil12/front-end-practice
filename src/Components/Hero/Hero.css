@@ -1,0 +1,52 @@
+.hero-main-container {
+    color: white;
+    display: flex;
+    justify-content: center;
+    width: auto;
+}
+
+.hero-container-2 {
+    max-width: 800px;
+    margin-top: 96px;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hero-para {
+    color: #00df9a;
+    font-weight: bold;
+    padding: 4px;
+   
+}
+
+.typed-para{
+    display: inline-block; 
+    vertical-align: middle;
+    margin: 0;
+}
+
+.react-typed{
+    display: inline-block; 
+    vertical-align: middle; 
+
+}
+
+.typed-text-hero{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    padding: 4px;
+}
+
+.hero-button{
+    width: 200px;
+    height: 35px;
+    background-color: #00df9a;
+    color: white;
+    border-radius: 15px ;
+    border: none;
+    font-size: larger;
+}

@@ -1,0 +1,14 @@
+.analytics-main{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.analytics-with-image{
+    width: 50%;
+    text-align: center;
+}
+
+.analytics-second{
+    width: 50%;
+    text-align: center;
+}

@@ -1,0 +1,105 @@
+.navbar-main {
+    margin: 1%;
+    align-items: center;
+}
+
+.navbar-ul {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.navbar-main li {
+    list-style-type: none;
+    padding: 8px;
+}
+
+.navbar-main li:hover {
+    background-color: rgb(131, 186, 205);
+}
+
+.navbar-ul li:nth-child(1) {
+    font-size: larger;
+    font-weight: bolder;
+    padding-bottom: 16px;
+    color: #00df9a;
+    float: left;
+}
+
+.navbar-icon {
+    padding: 8px;
+    display: none;
+}
+
+.navbar-heading {
+    display: none;
+    padding: 8px;
+
+}
+
+/* RESPONSIVE */
+.navbar-ul-responsive {
+    display: flex;
+    flex-direction: column;
+    transition: transform ease-in-out 0.3s;
+    transform: translateX(-100%);
+}
+
+.navbar-ul-responsive-show {
+    transform: translateX(0);
+}
+
+.navbar-ul-responsive-show ul {
+    list-style-type: none;
+    padding: 8px;
+    margin: 1%;
+    width: 60%;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    box-shadow: inset;
+}
+
+.navbar-ul-responsive-show li {
+    padding: 8px;
+    border-bottom: 1px solid grey;
+}
+
+.navbar-icon {
+    padding: 8px;
+}
+
+
+@media (max-width: 768px) {
+
+    .navbar-main {
+        margin: 1%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+
+    .navbar-icon {
+        display: block;
+        float: right;
+        /* Show the icon on smaller screens */
+    }
+
+    .navbar-ul {
+        display: none;
+    }
+
+    .navbar-heading {
+        display: flex;
+        align-items: center;
+        margin-left: 1%;
+    }
+
+    .navbar-heading h1 {
+        font-size: larger;
+        font-weight: bolder;
+        color: #00df9a;
+        margin: 0;
+
+    }
+}
