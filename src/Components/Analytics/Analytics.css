@@ -1,14 +1,99 @@
-.analytics-main{
+.analytics-main {
+    background-color: white;
+    height: 100vh;
     display: flex;
     justify-content: space-evenly;
+    color: black;
+    padding: 16px;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    margin: 0;
+
 }
 
-.analytics-with-image{
-    width: 50%;
+.analytics-with-image {
+    width: 35%;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+}
+
+.analytics-second {
+    width: 55%;
+    text-align: left;
+}
+
+.laptop-image {
+    width: 500px;
+    height: auto;
+    border-radius: 5px;
+    float: left;
+    margin-bottom: auto;
+    margin-top: auto;
+}
+
+.analytics-para {
+    color: #00df9a;
+    font-weight: bold;
+    padding: 4px;
+}
+
+.analytics-btn {
+    width: 200px;
+    height: 35px;
+    color: #00df9a;
+    background-color: black;
+    border-radius: 15px;
+    border: none;
+    font-size: larger;
     text-align: center;
 }
 
-.analytics-second{
-    width: 50%;
-    text-align: center;
+.analytics-btn-div {
+    display: flex;
+    justify-content: center;
+}
+
+.analytics-main-open {
+    margin-left: 105px;
+    background-color: white;
+    display: flex;
+    justify-content: space-evenly;
+    color: black;
+    padding: 16px;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+
+@media(max-width: 768px) {
+    .analytics-main {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: white;
+    }
+
+    .analytics-main-open {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: white;
+        width: 100%;
+    }
+
+    .analytics-with-image {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        background-color: white;
+    }
+
+    .analytics-second {
+        width: 100%;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+    }
+
 }

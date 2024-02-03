@@ -1,5 +1,9 @@
-body {
+.App{
   background-color: #000300;
   color: white;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  width: 100%;
 }
 

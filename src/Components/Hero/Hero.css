@@ -2,7 +2,10 @@
     color: white;
     display: flex;
     justify-content: center;
-    width: auto;
+    height: 100vh;
+    margin-left: 0; 
+    background-color: #000300;
+    color: white;
 }
 
 .hero-container-2 {
@@ -19,34 +22,47 @@
     color: #00df9a;
     font-weight: bold;
     padding: 4px;
-   
 }
 
-.typed-para{
-    display: inline-block; 
+.typed-para {
+    display: inline-block;
     vertical-align: middle;
     margin: 0;
 }
 
-.react-typed{
-    display: inline-block; 
-    vertical-align: middle; 
-
+.react-typed {
+    display: inline-block;
+    vertical-align: middle;
 }
 
-.typed-text-hero{
+.typed-text-hero {
     display: flex;
     justify-content: center;
     align-self: center;
     padding: 4px;
 }
 
-.hero-button{
+.hero-button {
     width: 200px;
     height: 35px;
     background-color: #00df9a;
     color: white;
-    border-radius: 15px ;
+    border-radius: 15px;
     border: none;
     font-size: larger;
+}
+
+.hero-main-container.navbar-open {
+    margin-left: 100px;
+}
+
+@media (max-width: 768px) {
+   
+    .hero-main-container {
+        margin-left: 0;
+    }
+
+    .hero-container-2 {
+        margin-top: 60px; 
+    }
 }
