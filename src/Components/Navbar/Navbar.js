@@ -1,3 +1,5 @@
+/* Navbar.jsx */
+
 import "./Navbar.css";
 import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
 import appStore from "../../zustand/appStore";
@@ -6,36 +8,33 @@ export default function Navbar({ windowWidth }) {
     const nav = appStore((state) => state.nav);
     const handleNav = appStore((state) => state.handleNav);
 
-
     return (
         <>
+
             <div className="navbar-main">
-                <div className="navbar-heading">
-                    <h1>REACT.</h1>
-                </div>
-                
-                <ul className="navbar-ul">
+                <h1 className="heading">REACT.</h1>
+
+                <ul className={nav  && windowWidth <= 768 ? 'navbar-ul-hidden' : 'navbar-ul'}>
                     <li>Home</li>
-                    <li>Resources</li>
                     <li>About</li>
-                    <li>Contact</li>
+                    <li>Contacts</li>
+                    <li>Resources</li>
                 </ul>
 
-                <div className="navbar-icon" onClick={handleNav}>
-                    {nav ? (<AiOutlineClose size={20} />) : <AiOutlineMenu size={20} />}
+                <div onClick={handleNav} className="nav-icon">
+                    {nav ? <AiOutlineClose size={20} /> : <AiOutlineMenu size={20} />}
                 </div>
+
+                <ul  className=  { nav && windowWidth <=768 ? "navbar-ul-responsive-show" : 'navbar-ul-responsive-show-hidden'}>
+                    <h1 className="heading" >REACT.</h1>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Contacts</li>
+                    <li>Resources</li>
+
+                </ul>
             </div>
 
-            {windowWidth < 768 && nav &&
-                <div className={'navbar-ul-responsive-show '}>
-                    <ul>
-                        <li className="li">Home</li>
-                        <li className="li">Resources</li>
-                        <li className="li">About</li>
-                        <li className="li">Contact</li>
-                    </ul>
-                </div>
-            }
         </>
     );
 }

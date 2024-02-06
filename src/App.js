@@ -7,6 +7,7 @@ import appStore from './zustand/appStore';
 import { useState, useEffect } from 'react';
 import NewsLetter from './Components/NewsLetter/NewsLetter';
 import Cards from './Components/Cards/Cards';
+import Footer from './Components/Footer/Footer';
 
 function App() {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
@@ -31,6 +32,7 @@ function App() {
       <Analytics MobileNavStatus={nav} windowWidth ={windowWidth} />
       <NewsLetter MobileNavStatus={nav} windowWidth ={windowWidth} /> 
       <Cards MobileNavStatus={nav} windowWidth ={windowWidth} />
+      <Footer />
     </div>
   );
 }

@@ -3,10 +3,11 @@ import single from '../../assets/single.png'
 import double from '../../assets/double.png'
 import triple from '../../assets/triple.png'
 
-export default function Cards({ MobileNavStatus, windowWidth }) {
-    const contanierClassName = MobileNavStatus && windowWidth < 768 ? 'main-cards-container-open' : 'main-cards-container';
+export default function Cards() {
     return (
         <div className='main-cards-container'>
+        <div className='main-2'>
+        </div>
             <div className="card-container">
                 <div className='card-inside-div'>
                     <div>

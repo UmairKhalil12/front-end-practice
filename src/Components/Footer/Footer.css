@@ -1,0 +1,19 @@
+.main-footer{
+    height: auto;
+    background-color: #000300;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+.inside-footer{
+    width: 25%;
+    margin-left: 2rem;
+}
+
+.heading-footer{
+    color: #00df9a;
+    font-size: large;
+    font-weight: bold;
+    width: 100%;
+}
