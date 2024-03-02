@@ -1,12 +1,9 @@
 import "./Hero.css"
 import { ReactTyped } from "react-typed";
 
-export default function Hero({MobileNavStatus , windowWidth}) {
-    const containerClassName = `hero-main-container ${
-        MobileNavStatus && windowWidth < 768 ? "navbar-open" : ""
-      }`;
+export default function Hero() {
     return (
-        <div className='hero-main-container'>
+        <div className='hero-main-container' id="home">
             <div className="hero-container-2">
                 <p className="hero-para"> GROW WITH REACT JS </p>
                 <h1> Growing with MERN </h1>

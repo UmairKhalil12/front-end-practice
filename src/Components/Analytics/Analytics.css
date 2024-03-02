@@ -1,22 +1,19 @@
 .analytics-main {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
     background-color: white;
-    height: 60vh;
+    height: 100vh;
     color: black;
-    padding: 16px;
-    margin-top: 4rem;
-    margin-bottom: 4rem;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
 }
 
 .analytics-with-image {
-    width: 35%;
     background-color: white;
 }
 
 .analytics-second {
-    width: 60%;
     text-align: left;
 }
 
@@ -24,19 +21,16 @@
     width: 500px;
     height: auto;
     border-radius: 5px;
-    float: left;
-    margin-bottom: auto;
-    margin-top: auto;
 }
 
 .analytics-para {
     color: #00df9a;
     font-weight: bold;
-    padding: 4px;
+    padding: 2px;
 }
 
 .analytics-btn {
-    width: 200px;
+    width: 40%;
     height: 35px;
     color: #00df9a;
     background-color: black;
@@ -44,6 +38,7 @@
     border: none;
     font-size: larger;
     text-align: center;
+    cursor: pointer;
 }
 
 .analytics-btn-div {
@@ -51,181 +46,56 @@
     justify-content: center;
 }
 
-
-
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 850px) {
     .analytics-main {
-        background-color: white;
-        height: auto;
-        display: flex;
+        height: 100vh;
         flex-direction: column;
-        color: black;
-        padding: 16px;
-        margin-top: 4rem;
-        margin-bottom: 4rem;
         margin: 0;
+        padding-top:2.5rem ;
+        padding-bottom:2.5rem;
     }
 
     .analytics-with-image {
         display: flex;
         justify-content: center;
-        background-color: white;
     }
 
     .analytics-second {
-        width: 100%;
+        width: 80%;
         text-align: center;
         display: flex;
         justify-content: center;
     }
 
-    .laptop-image {
-        width: 400px;
-        height: auto;
-        border-radius: 5px;
-        float: left;
-        margin-bottom: auto;
-        margin-top: auto;
-    }
-
-    .analytics-para {
-        color: #00df9a;
-        font-weight: bold;
-        padding: 4px;
-    }
-
-    .analytics-btn {
-        width: 200px;
+    .analytics-btn{
         height: 35px;
-        color: #00df9a;
-        background-color: black;
-        border-radius: 15px;
-        border: none;
-        font-size: larger;
-        text-align: center;
     }
-
-    .analytics-btn-div {
-        display: flex;
-        justify-content: center;
-    }
-
 }
 
 
-@media only screen and (max-width: 576px) {
+@media only screen and (max-width: 550px) {
     .analytics-main {
-        background-color: white;
         height: auto;
-        display: flex;
         flex-direction: column;
-        color: black;
-        padding: 16px;
-        margin-top: 4rem;
-        margin-bottom: 4rem;
         margin: 0;
     }
 
     .analytics-with-image {
-        display: flex;
-        justify-content: center;
-        background-color: white;
+        width: 75%;
     }
 
     .analytics-second {
-        width: 100%;
-        text-align: center;
-        display: flex;
-        justify-content: center;
+        width: 75%;
     }
 
     .laptop-image {
-        width: 400px;
+        width: 350px;
         height: auto;
-        border-radius: 5px;
-        float: left;
-        margin-bottom: auto;
-        margin-top: auto;
-    }
-
-    .analytics-para {
-        color: #00df9a;
-        font-weight: bold;
-        padding: 4px;
-    }
-
-    .analytics-btn {
-        width: 200px;
-        height: 35px;
-        color: #00df9a;
-        background-color: black;
-        border-radius: 15px;
-        border: none;
-        font-size: larger;
-        text-align: center;
-    }
-
-    .analytics-btn-div {
-        display: flex;
-        justify-content: center;
     }
 }
 
 @media only screen and (max-width : 375px) {
-    .analytics-main {
-        background-color: white;
-        height: auto;
-        display: flex;
-        flex-direction: column;
-        color: black;
-        padding: 16px;
-        margin-top: 4rem;
-        margin-bottom: 4rem;
-        margin: 0;
-    }
+  
 
-    .analytics-with-image {
-        display: flex;
-        justify-content: center;
-        background-color: white;
-    }
-
-    .analytics-second {
-        width: 100%;
-        text-align: center;
-        display: flex;
-        justify-content: center;
-    }
-
-    .laptop-image {
-        width: 400px;
-        height: auto;
-        border-radius: 5px;
-        float: left;
-        margin-bottom: auto;
-        margin-top: auto;
-    }
-
-    .analytics-para {
-        color: #00df9a;
-        font-weight: bold;
-        padding: 4px;
-    }
-
-    .analytics-btn {
-        width: 200px;
-        height: 35px;
-        color: #00df9a;
-        background-color: black;
-        border-radius: 15px;
-        border: none;
-        font-size: larger;
-        text-align: center;
-    }
-
-    .analytics-btn-div {
-        display: flex;
-        justify-content: center;
-    }
-
+   
 }

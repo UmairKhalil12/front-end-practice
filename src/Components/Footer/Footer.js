@@ -10,7 +10,7 @@ import {
 
 export default function Footer() {
     return (
-        <div className='main-footer'>
+        <div className='main-footer' id='about'>
 
             <div className="main-footer-2">
 

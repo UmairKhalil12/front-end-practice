@@ -9,6 +9,7 @@ import NewsLetter from './Components/NewsLetter/NewsLetter';
 import Cards from './Components/Cards/Cards';
 import Footer from './Components/Footer/Footer';
 
+
 function App() {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
   useEffect(() => {
@@ -28,10 +29,10 @@ function App() {
   return (
     <div className='App'>
       <Navbar  windowWidth ={windowWidth} />
-      <Hero MobileNavStatus={nav}  windowWidth ={windowWidth} />
-      <Analytics MobileNavStatus={nav} windowWidth ={windowWidth} />
-      <NewsLetter MobileNavStatus={nav} windowWidth ={windowWidth} /> 
-      <Cards MobileNavStatus={nav} windowWidth ={windowWidth} />
+      <Hero  />
+      <Analytics  />
+      <NewsLetter /> 
+      <Cards  />
       <Footer />
     </div>
   );

@@ -5,7 +5,7 @@ import triple from '../../assets/triple.png'
 
 export default function Cards() {
     return (
-        <div className='main-cards-container'>
+        <div className='main-cards-container' id='resources'>
         <div className='main-2'>
         </div>
             <div className="card-container">
